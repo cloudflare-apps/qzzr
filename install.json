@@ -1,0 +1,31 @@
+{
+  "resources": {
+    "body": [
+      {
+        "type": "script",
+        "src": "./eager-qzzr.js"
+      },
+      {
+        "type": "script",
+        "contents": "EagerQzzr.init(Eager.createElement(INSTALL_OPTIONS.container), INSTALL_OPTIONS.id)"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "id": {
+        "title": "Qzzr quiz ID",
+        "description": "Get this from the “Embed this quiz” page.",
+        "type": "string",
+        "default": "103109"
+      },
+      "container": {
+        "order": 3,
+        "title": "Location",
+        "description": "Decide where to place the quiz on your site.",
+        "type": "object",
+        "format": "element"
+      }
+    }
+  }
+}
