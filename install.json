@@ -1,13 +1,9 @@
 {
   "resources": {
-    "body": [
+    "head": [
       {
         "type": "script",
         "src": "./eager-qzzr.js"
-      },
-      {
-        "type": "script",
-        "contents": "EagerQzzr.init(Eager.createElement(INSTALL_OPTIONS.container), INSTALL_OPTIONS.id)"
       }
     ]
   },
