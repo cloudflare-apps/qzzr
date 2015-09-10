@@ -10,6 +10,6 @@
       return;
     }
 
-    container.innerHTML = '<iframe id="quizWidget-' + id + '" width="100%" height="700px" frameborder="0" border="none" src="https://app.qzzr.com/quiz/' + id + '/widget"></iframe>';
+    container.innerHTML = '<iframe id="quizWidget-' + options.id + '" width="100%" height="700px" frameborder="0" border="none" src="https://app.qzzr.com/quiz/' + options.id + '/widget"></iframe>';
   });
 })();
