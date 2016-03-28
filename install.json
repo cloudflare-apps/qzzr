@@ -9,19 +9,29 @@
   },
   "options": {
     "properties": {
-      "id": {
+      "quizzes": {
+        "title": "Quizzes",
+        "type": "array",
         "order": 1,
-        "title": "Qzzr quiz ID",
-        "description": "Get this from the “Embed this quiz” page.",
-        "type": "string",
-        "default": "103109"
-      },
-      "container": {
-        "order": 2,
-        "title": "Location",
-        "description": "Decide where to place the quiz on your site.",
-        "type": "object",
-        "format": "element"
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "order": 1,
+              "title": "Qzzr quiz ID",
+              "description": "Get this from the “Embed this quiz” page.",
+              "type": "string",
+              "default": "103109"
+            },
+            "container": {
+              "order": 2,
+              "title": "Location",
+              "description": "Decide where to place the quiz on your site.",
+              "type": "object",
+              "format": "element"
+            }
+          }
+        }
       }
     }
   }
